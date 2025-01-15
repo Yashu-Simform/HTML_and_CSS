@@ -1,0 +1,92 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+/* Searchbar */
+.searchbar{
+    height: 7vh;
+    width: 100%;
+    background-color: #1a73e8;
+    display: flex;
+    justify-content: space-around;
+}
+
+.flexContainer{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    height: 70%;
+    width: auto;
+    color: white;
+}
+
+.customsearch{
+    display: flex;
+    height: 70%;
+    width: 30vw;
+    background-color: #fff;
+    border-radius: 2px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 5px;
+}
+
+/* .search:focus{
+    border: none;
+} */
+
+.search{
+    height: 3.5vh;
+    min-width: 80%;
+    border: none;
+    border-radius: inherit;
+}
+
+.searchbtn{
+    /* height: 3.5vh; */
+    margin-left: 2px;
+    cursor: pointer;
+    /* background-color: transparent; */
+}
+
+
+.loginbtn, .more, .cart{
+    height: 60%;
+    width: 5vw;
+    min-width: min-content;
+    padding: 0 5px;
+    border-radius: 2px;
+    border: none;
+    text-align: center;
+    box-shadow: none;
+    font-weight: 600;
+}
+
+
+.loginbtn{
+    color: #1a73e8;
+    background-color: #fff;
+}
+
+.more, .cart{
+    background-color: transparent;
+    color: #fff;
+}
+
+.cart>span{
+    margin-right: 5px;
+}
+
+/* Nav bar */
+
+/* Items Grid */
