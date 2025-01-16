@@ -1,8 +1,14 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+
 html, body{
     margin: 0;
     padding: 0;
     height: 100vh;
     width: 100vw;
+}
+
+body{
+    background-color: #efeff2;
 }
 
 *{
@@ -11,14 +17,16 @@ html, body{
 
 /* Searchbar */
 .searchbar{
-    height: 7vh;
+    height: 6vh;
     width: 100%;
+    min-height: 40px;
+    max-height: 58px;
     background-color: #1a73e8;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
 }
 
-.flexContainer{
+.lefthalf, .righthalf{
     height: 100%;
     display: flex;
     align-items: center;
@@ -38,7 +46,7 @@ html, body{
     border-radius: 2px;
     justify-content: space-between;
     align-items: center;
-    padding: 4px 5px;
+    padding: 4px 15px;
 }
 
 /* .search:focus{
@@ -46,7 +54,7 @@ html, body{
 } */
 
 .search{
-    height: 3.5vh;
+    height: 100%;
     min-width: 80%;
     border: none;
     border-radius: inherit;
@@ -60,10 +68,10 @@ html, body{
 }
 
 
-.loginbtn, .more, .cart{
+.loginbtn, .more-div, .cart{
     height: 60%;
     width: 5vw;
-    min-width: min-content;
+    min-width: 66.6px;
     padding: 0 5px;
     border-radius: 2px;
     border: none;
@@ -87,6 +95,109 @@ html, body{
     margin-right: 5px;
 }
 
+.mydrop{
+    display: none;
+}
+
+.more-div{
+    display: flex;
+    align-items: center;
+}
+
+.more{
+    height: 100%;
+    width: 100%;
+    border: none;
+    border-radius: 2px;
+    margin: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.more:hover{
+    background-color: white;
+    color: #1a73e8;
+    border-radius: 2px;
+}
+
+@media screen and (max-width: 600px) {
+    .searchbar{
+        justify-content: space-between;
+    }
+    .customsearch{
+        width: 70%;
+        min-width: 70%;
+    }
+
+    .righthalf{
+        display: none;
+    }
+
+    .mydrop{
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .dropdown-btn{
+        height: 60%;
+        background-color: transparent;
+        border: none;
+    }
+
+    #dropdownMenuButton>i{
+        height: 100%;
+    }
+
+    .dropdown-menu{
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .dropdown-item{
+        text-wrap: wrap;
+        color: #1a73e8;
+    }
+}
+
 /* Nav bar */
 
+.navbar{
+    background-color: #fff;
+    width: 100%;
+    min-height: 12vh;
+    display: flex;
+    justify-content: center;
+}
+
+.navelm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.navelm>img{
+    height: 60px;
+    width: 60px;
+    margin-bottom: 10px;
+}
+
+.navlabel{
+    height: 18px;
+    width: 70px;
+    white-space: nowrap;
+    font-size: 13px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+}
+
+.space-bwt-items{
+    width: 5%;
+    max-width: 60px;
+    min-width: 10px;
+}
 /* Items Grid */
