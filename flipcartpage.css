@@ -201,3 +201,66 @@ body{
     min-width: 10px;
 }
 /* Items Grid */
+.super-container{
+    height: 100%; 
+    width: 100%; 
+    padding-top: 20px; 
+    text-align: center;
+}
+
+.container1{
+    height: 80%;
+    width: 90%;
+    margin: auto;
+}
+
+.deals-head, .ad{
+    background-color: #fff;
+}
+
+.upper{
+    height: 50%;
+    width: 100%;
+    display: flex;
+}
+
+.ad, .ad>img{
+    height: 100%;
+    max-width: 247px;
+}
+
+
+.deals{
+    height: 100%;
+    width: 90%;
+}
+
+.deals-head{
+    height: 15%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.deals-head>header{
+    display: inline;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 5px 20px;
+}
+
+.deals-head>i{
+    padding: 5px 10px;
+}
+
+.deals-head>span{
+    color: grey;
+    padding: 5px 10px;
+}
+
+.deals-head>button{
+    height: 60%;
+    background-color: #1a73e8;
+    color: #fff;
+    border: none;
+}
